@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+}
+
+body {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  line-height: 1;
+}
+
+.page {
+  background-color: #121212;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 17.5rem;
+  max-width: 192rem;
+  margin: 0 auto;
+  align-items: center;
+  padding: 5.5rem;
+}
+
+.logo-text {
+  padding-left: 16rem;
+}
+
+.figma-icon {
+  width: 5.872rem;
+  height: 9.228rem;
+  margin-bottom: 8.5rem;
+  transform: scale(1.5);
+}
+
+.heading-primary {
+  font-size: 12rem;
+  font-weight: 600;
+  color: #6979f8;
+  letter-spacing: -0.5px;
+  margin-bottom: 4rem;
+}
+
+.heading-secondary {
+  font-size: 8rem;
+  letter-spacing: -1px;
+  margin-bottom: 14.5rem;
+  font-weight: 300;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 7rem;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.icons-imgs-container {
+  position: relative;
+}
+
+.circle {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle-ext {
+  width: 100%;
+  padding-bottom: 100%;
+  background-color: rgba(175, 175, 175, 0.1);
+}
+.circle-mid {
+  width: 75%;
+  padding-bottom: 75%;
+  background-color: rgba(175, 175, 175, 0.1);
+}
+.circle-int {
+  width: 50%;
+  padding-bottom: 50%;
+  background-color: rgba(175, 175, 175, 0.2);
+}
+
+.window {
+  background-color: #fff;
+  width: 60%;
+  position: absolute;
+}
+
+.window-flex {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+/* TOP */
+
+.window-twin {
+  background-color: inherit;
+  color: #6979f8;
+  padding: 2rem 0 6.5rem 0;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.window-top {
+  right: 2%;
+  top: -22rem;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.icon-top,
+.empity {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.float-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  background-color: #6979f8;
+  color: #fff;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.float-icon-m {
+  padding: 1.15rem;
+}
+
+.float-icon-l {
+  padding: 2.15rem;
+}
+
+.float-icon-top {
+  left: 50%;
+  top: -9rem;
+  transform: translate(-50%, -50%);
+}
+.float-icon-right {
+  left: 67%;
+  top: -5rem;
+  transform: translate(-50%, -50%);
+}
+.float-icon-bottom {
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+}
+.float-icon-left {
+  left: 33%;
+  top: -5rem;
+  transform: translate(-50%, -50%);
+}
+
+/* MIDDLE */
+
+.window-mid {
+  left: 0;
+  top: 50%;
+  color: #000;
+  padding: 2.5rem 0 6.5rem 0;
+}
+
+.icon-mid {
+  width: 3rem;
+  height: 3rem;
+}
+
+.heart {
+  color: #ff647c;
+}
+
+.bubble {
+  position: absolute;
+  background-color: #ed4756;
+  padding: 1rem 2rem 1rem 2rem;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.8rem;
+  border-radius: 5px;
+  left: 70%;
+  top: -8rem;
+  transform: translate(-50%, 0);
+}
+
+.bubble-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.bubble-div {
+  display: flex;
+  align-items: center;
+}
+
+.bubble::after {
+  content: "";
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #ed4756;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, +50%) rotate(45deg);
+}
+
+/* BOTTOM */
+
+.window-bottom {
+  left: 55%;
+  top: 25rem;
+  transform: translate(-50%, 0);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.bt-float-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  padding: 2.5rem 1.8rem;
+  background-color: #6979f8;
+  color: #fff;
+  border-radius: 8px;
+  position: absolute;
+  left: 50%;
+  top: -0.9rem;
+  transform: translate(-50%, -0);
+}
+
+.group-icons {
+  background-color: #6979f8;
+  padding: 1.4rem 2.8rem 1.4rem;
+  border-radius: 100px;
+  display: flex;
+  gap: 2.8rem;
+  position: absolute;
+  left: 50%;
+  top: -2.5rem;
+  transform: translate(-50%, -100%);
+}
+
+.group-icon {
+  width: 2.6rem;
+  height: 2.6rem;
+  color: #6979f8;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 50%;
+}

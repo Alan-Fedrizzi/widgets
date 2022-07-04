@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform</title>
+    <script defer src="script.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        /* font-size: 10px; */
+        /* 10px / 16px = 0.625 = 62.5% */
+        /* Percentage of user's browser font-size setting */
+        font-size: 62.5%;
+      }
+      body {
+        font-family: sans-serif;
+        color: #343a40;
+        line-height: 1;
+      }
+      .accordion {
+        max-width: 70rem;
+        margin: 100px auto;
+      }
+      .item {
+        padding: 2.4rem;
+        background-color: #f1f3f5;
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 1.8rem;
+      }
+      .title {
+        font-size: 3.2rem;
+        font-weight: 700;
+      }
+
+      .description {
+        font-size: 1.8rem;
+        line-height: 1.8;
+        font-weight: 400;
+        border-top: 2px solid #bac8ff;
+        padding-top: 5px;
+        display: none;
+      }
+      .open .description {
+        display: block;
+      }
+
+      .icon {
+        width: 2.4rem;
+        height: 2.4rem;
+        color: #fff;
+        z-index: 2;
+        transition: all 0.5s;
+        transform: rotate(45deg);
+      }
+      .m {
+        height: 3.2rem;
+        width: 3.2rem;
+        background-color: #4263eb;
+        border: none;
+        border-radius: 5px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        transition: all 0.5s;
+        cursor: pointer;
+      }
+      .l,
+      .r {
+        height: 2.5rem;
+        width: 2.5rem;
+        background-color: #4263eb;
+        border-radius: 5px;
+        position: absolute;
+      }
+      .l {
+        top: -30%;
+        left: 50%;
+        transform: translate(-50%, 0) rotate(45deg);
+      }
+      .r {
+        bottom: -30%;
+        left: 50%;
+        transform: translate(-50%, 0) rotate(45deg);
+      }
+      .open .m {
+        transform: rotate(90deg);
+      }
+      .open .icon {
+        transform: rotate(0deg);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="accordion">
+      <div class="item">
+        <p class="title">Lorem</p>
+        <button class="m">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+
+          <div class="l"></div>
+          <div class="r"></div>
+        </button>
+        <p class="description">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique
+          nemo officiis veritatis minus ipsum consequuntur pariatur distinctio
+          fugiat fugit excepturi quam sequi expedita est nobis placeat impedit
+          harum, autem qui?
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
