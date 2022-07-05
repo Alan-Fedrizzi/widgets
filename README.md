@@ -1,6 +1,6 @@
 # Widgets
 
-Um compilado de widgets para desenvolvimento de habilidades.
+A compilation of Widgets for practice.
 
 - [accordion](https://github.com/Alan-Fedrizzi/widgets/tree/main/accordion)
 - [accordion-js](https://github.com/Alan-Fedrizzi/widgets/tree/main/accordion-js)
